@@ -1,0 +1,40 @@
+Tudo em React basicamente são componentes
+
+$ npm create vite@latest ->
+ cd vite-project
+  npm install
+
+code . -> abrir pasta no vs code
+
+ctrl + " no vs code
+
+  npm run dev
+
+
+===================================
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Greeting(){
+    return <h2>My first component</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<Greeting />);
+
+
+-> Para criar um componente em react você precisa crialo e exportal e depois importalo no local que deseja reenderizar
+
+=============================
+
+*Componentes devem ser criado com Letra maiuscula no inicio do nome do componente
+
+
+=============================
+
+componentes só poder retornar uma div completa, para evitar de ficar div dentro de div utilize         <React.Fragment> ou <>
+
+ 
